@@ -1,0 +1,8 @@
+
+<div class="calculadora">   
+    <div class="visor"> {{ visor }} </div>
+    
+    <div class="teclas">
+        <span class="tecla" (click)="funcoes(tecla)" *ngFor="let tecla of teclas; index as i" [ngClass]="{igual: i  === 15}"> {{tecla}} </span>
+    </div>
+</div>
